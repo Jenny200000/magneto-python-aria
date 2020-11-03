@@ -15,7 +15,6 @@ RUN wget https://raw.githubusercontent.com/deaduserbot/magneto-python-aria/main/
 RUN wget https://raw.githubusercontent.com/deaduserbot/magneto-python-aria/main/token.pickle
 COPY requirements.txt .
 COPY extract /usr/local/bin
-RUN pip3 install --no-cache-dir youtube-dl
 RUN chmod +x /usr/local/bin/extract
 RUN pip3 install --no-cache-dir -r requirements.txt
 RUN locale-gen en_US.UTF-8
